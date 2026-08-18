@@ -1,0 +1,87 @@
+body {
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #aaa;
+  margin-left: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #b4ff00;
+}
+
+.hero {
+  padding: 120px 60px;
+}
+
+.hero .tag {
+  color: #b4ff00;
+  font-weight: 600;
+}
+
+.hero h2 {
+  font-size: 4rem;
+  line-height: 1.2;
+}
+
+.hero h2 span {
+  color: #b4ff00;
+}
+
+.hero .desc {
+  max-width: 600px;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+.sobre-mi, .proyectos, .contacto {
+  padding: 80px 60px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #141414;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card a {
+  color: #b4ff00;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: #777;
+}
