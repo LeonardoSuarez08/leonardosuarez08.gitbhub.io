@@ -3,61 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LeonardoSuarez08 | Portafolio</title>
+  <title>Leonardo Suárez | Desarrollador Web</title>
+  <meta name="description" content="Leonardo Suárez — desarrollador web en Chiclayo, Perú. PHP, MySQL y Bootstrap.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
-    <h1 class="logo">LS.</h1>
-    <nav>
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
+    <a href="#" class="logo">leo<span>@</span>dev<span>:~$</span></a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="nav-links">
+      <a href="#sobre-mi"><span class="idx">01</span>sobre_mi</a>
+      <a href="#proyectos"><span class="idx">02</span>proyectos</a>
+      <a href="#contacto"><span class="idx">03</span>contacto</a>
     </nav>
   </header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <p class="tag">DESARROLLADOR WEB — CHICLAYO, PE</p>
-      <h2 class="fade-in">Ideas claras.<br><span>Sistemas que avanzan.</span></h2>
-      <p class="desc slide-up">Combino PHP, MySQL y Bootstrap para crear soluciones web modernas y funcionales.</p>
-    </div>
-  </section>
-
-  <section id="sobre-mi" class="sobre-mi fade-in">
-    <h3>Sobre mí</h3>
-    <p>Soy Leonardo, desarrollador web apasionado por el diseño limpio y la arquitectura MVC. Me gusta crear sistemas que sean tan estéticos como eficientes.</p>
-  </section>
-
-  <section id="proyectos" class="proyectos">
-    <h3>Proyectos</h3>
-    <div class="cards">
-      <div class="card zoom-in">
-        <h4>Sistema Web de Gestión</h4>
-        <p>CRUD completo con PHP, MySQL y Bootstrap.</p>
-        <a href="https://github.com/LeonardoSuarez08/LeonardoSuarez08" target="_blank">Ver proyecto</a>
+  <main>
+    <section class="hero">
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="terminal-title">consulta.sql</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor">▌</span></p>
+        </div>
       </div>
-      <div class="card zoom-in">
-        <h4>Portafolio Personal</h4>
-        <p>Diseño moderno y minimalista con HTML, CSS y animaciones suaves.</p>
-        <a href="https://leonardosuarez08.github.io" target="_blank">Ver sitio</a>
-      </div>
-    </div>
-  </section>
 
-  <section id="contacto" class="contacto fade-in">
-    <h3>Hablemos</h3>
-    <p>¿Tienes un proyecto o idea? Escríbeme:</p>
-    <ul>
-      <li>📧 leonardosuarez08@gmail.com</li>
-      <li>🌐 <a href="https://linkedin.com/in/leonardosuarez08" target="_blank">LinkedIn</a></li>
-      <li>💻 <a href="https://github.com/LeonardoSuarez08" target="_blank">GitHub</a></li>
-    </ul>
-  </section>
+      <div class="hero-text">
+        <p class="tag">// desarrollador web — chiclayo, pe</p>
+        <h1>Ideas claras.<br><span class="accent">Sistemas que avanzan.</span></h1>
+        <p class="desc">Combino PHP, MySQL y Bootstrap para construir soluciones web modernas, ordenadas por dentro y claras por fuera.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi" class="sobre-mi">
+      <p class="eyebrow">01 · sobre_mi</p>
+      <div class="sobre-grid">
+        <p class="sobre-texto">
+          Soy Leonardo, desarrollador web apasionado por el diseño limpio y la arquitectura MVC.
+          Me gusta crear sistemas que sean tan estéticos como eficientes: cada capa en su lugar,
+          cada dato bien modelado, cada interfaz pensada para la persona que la usa.
+        </p>
+        <ul class="stack-list">
+          <li><span>lenguaje</span>PHP</li>
+          <li><span>base de datos</span>MySQL</li>
+          <li><span>estilos</span>Bootstrap</li>
+          <li><span>patrón</span>MVC</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="proyectos" class="proyectos">
+      <p class="eyebrow">02 · proyectos</p>
+      <h2>Cosas que he construido</h2>
+
+      <div class="cards">
+        <article class="card">
+          <header class="card-head">
+            <span class="card-kicker">CREATE TABLE</span>
+            <h3>sistema_web_gestion</h3>
+          </header>
+          <dl class="card-fields">
+            <div class="field"><dt>stack</dt><dd>PHP · MySQL · Bootstrap</dd></div>
+            <div class="field"><dt>tipo</dt><dd>CRUD completo</dd></div>
+            <div class="field"><dt>descripcion</dt><dd>Gestión de datos con arquitectura MVC, pensada para ser mantenible y fácil de escalar.</dd></div>
+          </dl>
+          <a href="https://github.com/LeonardoSuarez08/LeonardoSuarez08" target="_blank" rel="noopener">Ver proyecto →</a>
+        </article>
+
+        <article class="card">
+          <header class="card-head">
+            <span class="card-kicker">CREATE TABLE</span>
+            <h3>portafolio_personal</h3>
+          </header>
+          <dl class="card-fields">
+            <div class="field"><dt>stack</dt><dd>HTML · CSS · JS</dd></div>
+            <div class="field"><dt>tipo</dt><dd>Sitio personal</dd></div>
+            <div class="field"><dt>descripcion</dt><dd>Diseño moderno y minimalista, con animaciones suaves y foco en la lectura.</dd></div>
+          </dl>
+          <a href="https://leonardosuarez08.github.io" target="_blank" rel="noopener">Ver sitio →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contacto" class="contacto">
+      <p class="eyebrow">03 · contacto</p>
+      <h2>Hablemos</h2>
+      <p class="contacto-intro">¿Tienes un proyecto o idea? Escríbeme.</p>
+
+      <table class="contact-table">
+        <tbody>
+          <tr>
+            <td class="c-key">correo</td>
+            <td class="c-val"><a href="mailto:leonardosuarez08@gmail.com">leonardosuarez08@gmail.com</a></td>
+          </tr>
+          <tr>
+            <td class="c-key">linkedin</td>
+            <td class="c-val"><a href="https://linkedin.com/in/leonardosuarez08" target="_blank" rel="noopener">/in/leonardosuarez08</a></td>
+          </tr>
+          <tr>
+            <td class="c-key">github</td>
+            <td class="c-val"><a href="https://github.com/LeonardoSuarez08" target="_blank" rel="noopener">/LeonardoSuarez08</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
 
   <footer>
-    <p>© 2026 LeonardoSuarez08 — Hecho con 💻 y ☕</p>
+    <p>© 2026 Leonardo Suárez — hecho con 💻 y ☕</p>
   </footer>
 
   <script src="script.js"></script>
